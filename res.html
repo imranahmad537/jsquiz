@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Result</title>
+</head>
+<body>
+  <h2>Quiz Result</h2>
+  <div>
+    <strong>Name:</strong> <span id="name"></span><br>
+    <strong>Roll No:</strong> <span id="rollNo"></span><br>
+    <strong>Course:</strong> <span id="course"></span><br>
+  </div>
+
+  <script>
+    // Retrieve query parameters from URL
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    // Get name, roll number, and course from query parameters
+    const name = urlParams.get('name');
+    const rollNo = urlParams.get('rollNo');
+    const course = urlParams.get('course');
+
+    // Display name, roll number, and course
+    document.getElementById('name').innerText = name;
+    document.getElementById('rollNo').innerText = rollNo;
+    document.getElementById('course').innerText = course;
+  </script>
+</body>
+</html>

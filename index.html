@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="registration.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2>Registration</h2>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="rollNo">Roll No:</label>
+        <input type="text" class="form-control" id="rollNo" name="rollNo" required>
+        <label for="rollNo">Batch:</label>
+        <input type="text" class="form-control" id="batch" name="batch" required>
+      </div>
+      <div class="form-group">
+        <label for="course">Course:</label>
+        <select class="form-control" id="course" name="course" required>
+          <option value="">Select Course</option>
+          <option value="wma">Web & App Development</option>
+          <option value="csec">Cyber Security</option>
+          <option value="cbot">AI Chatbot</option>
+         
+        </select>
+      </div>
+      <a href="main.html" class="btn btn-primary">Submit</a>
+      <!-- <button  type="submit" class="btn btn-primary" onclick="redirectToPage()">Submit</button> -->
+
+    </form>
+  </div>
+ 
+
+  <!-- Bootstrap JS (optional, for certain components) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
+

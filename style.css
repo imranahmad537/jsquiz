@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card{
+    box-shadow: 0 0 2px 2px #c6c4c4;
+}
